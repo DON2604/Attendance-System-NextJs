@@ -15,6 +15,9 @@ import {
   doc,
 } from "firebase/firestore";
 
+
+
+
 export default function HeroSection() {
   const [items, setItems] = useState([
     //{ name: "Mrinmay", roll: 35 },
@@ -35,6 +38,7 @@ export default function HeroSection() {
       setNewItem({ name: "", roll: "" });
     }
   };
+
 
   //read item from databsae
   useEffect(() => {
